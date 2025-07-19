@@ -17,8 +17,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 113 39% 58%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,17 +26,33 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 113 39% 58%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 113 39% 58%;
 
     --radius: 0.5rem;
+
+    /* ChiroUp Brand Colors */
+    --chiro-green: 113 39% 58%;
+    --chiro-green-dark: 140 30% 25%;
+    --chiro-green-light: 113 35% 85%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--chiro-green-light)), hsl(var(--background)));
+    --gradient-dark: linear-gradient(135deg, hsl(var(--chiro-green-dark)), hsl(140 35% 20%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 24px -4px hsl(var(--chiro-green) / 0.15);
+    --shadow-card: 0 8px 32px -8px hsl(0 0% 0% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 

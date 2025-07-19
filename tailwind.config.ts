@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'chiro-green': {
+					DEFAULT: 'hsl(var(--chiro-green))',
+					dark: 'hsl(var(--chiro-green-dark))',
+					light: 'hsl(var(--chiro-green-light))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
