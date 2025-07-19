@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 
 const ProductComparison = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-chiro-green-light">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
             Two Products. <span className="text-primary">ONE Mission.</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Choose the solution that fits your practice needs.
+          <p className="text-lg text-gray-600">
+            Find the right solution for YOU!
           </p>
         </div>
 
@@ -18,7 +18,7 @@ const ProductComparison = () => {
           <div className="bg-white rounded-lg p-8 shadow-card space-y-6 border border-primary/20">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-center">ChiroUp Essentials</h3>
-              <p className="text-muted-foreground text-center">
+              <p className="text-gray-600 text-center">
                 Essential tools for evidence-based chiropractic care with patient education and SOAP templates.
               </p>
             </div>
@@ -31,10 +31,11 @@ const ProductComparison = () => {
               />
             </div>
             
-            <div className="text-center">
-              <Button variant="outline" size="lg" className="w-full">
-                Try for Free
+            <div className="text-center space-y-2">
+              <Button size="lg" className="w-full bg-primary hover:bg-primary/90 font-bold">
+                TRY FOR FREE
               </Button>
+              <p className="text-sm text-gray-500 italic">Available worldwide.</p>
             </div>
           </div>
 
@@ -42,7 +43,7 @@ const ProductComparison = () => {
           <div className="bg-white rounded-lg p-8 shadow-card space-y-6 border border-primary/20">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-center">ChiroUp EHR</h3>
-              <p className="text-muted-foreground text-center">
+              <p className="text-gray-600 text-center">
                 Complete electronic health records with scheduling, billing, and comprehensive practice management.
               </p>
             </div>
@@ -55,10 +56,11 @@ const ProductComparison = () => {
               />
             </div>
             
-            <div className="text-center">
-              <Button size="lg" className="w-full bg-primary hover:bg-primary/90">
-                Book a Demo
+            <div className="text-center space-y-2">
+              <Button variant="outline" size="lg" className="w-full border-primary text-primary hover:bg-primary hover:text-white font-bold">
+                BOOK A DEMO
               </Button>
+              <p className="text-sm text-gray-500 italic">Currently available in the US only.</p>
             </div>
           </div>
         </div>

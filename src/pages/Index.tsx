@@ -1,3 +1,4 @@
+import CookieBanner from "@/components/CookieBanner";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TestimonialBanner from "@/components/TestimonialBanner";
@@ -12,6 +13,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <CookieBanner />
       <Header />
       <HeroSection />
       <TestimonialBanner />

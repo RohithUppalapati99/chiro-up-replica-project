@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const features = [
   {
     iconSrc: "/lovable-uploads/7c1a42b6-3155-48ac-9f89-046fcddc6fbc.png",
@@ -21,17 +23,17 @@ const FeaturesSection = () => {
     <section className="py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Other companies sell features.{" "}
-            <span className="italic text-primary">We're creating a lifestyle.</span>
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+            Other companies sell features.<br />
+            <span className="text-primary">We're creating a lifestyle.</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {features.map((feature, index) => (
             <div key={index} className="text-center space-y-4 p-6">
               <div className="flex justify-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center p-3">
+                <div className="w-16 h-16 bg-chiro-green-light rounded-full flex items-center justify-center p-3">
                   <img 
                     src={feature.iconSrc} 
                     alt={feature.title}
@@ -40,9 +42,15 @@ const FeaturesSection = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center">
+          <Button size="lg" className="bg-primary hover:bg-primary/90 font-bold px-8 py-4">
+            VIEW SOLUTIONS
+          </Button>
         </div>
       </div>
     </section>

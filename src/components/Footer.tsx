@@ -55,7 +55,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-muted/30 border-t">
+    <footer className="bg-white border-t">
       <div className="container py-16">
         <div className="grid md:grid-cols-5 gap-8">
           {Object.entries(footerLinks).map(([key, section]) => (
@@ -66,7 +66,7 @@ const Footer = () => {
                   <li key={index}>
                     <a 
                       href="#" 
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-gray-600 hover:text-primary transition-colors text-sm"
                     >
                       {link}
                     </a>
@@ -77,28 +77,38 @@ const Footer = () => {
           ))}
         </div>
         
-        <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="flex items-center space-x-4">
-            <img 
-              src="/lovable-uploads/de143e80-99d9-4594-9af5-e33f84570f54.png" 
-              alt="ChiroUp Logo" 
-              className="h-6 w-auto"
-            />
-            <span className="text-sm text-muted-foreground">
-              © 2025 ChiroUp. All rights reserved.
-            </span>
+        <div className="border-t mt-12 pt-8 space-y-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+            <div className="space-y-2">
+              <p className="text-sm text-gray-600">
+                4460 N Illinois St, Suite B<br />
+                Swansea, IL 62226
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+                  <Instagram className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
           </div>
           
-          <div className="flex items-center space-x-4">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Facebook className="h-5 w-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Instagram className="h-5 w-5" />
-            </a>
+          <div className="border-t pt-4 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+            <p className="text-sm text-gray-600">
+              © 2025 ChiroUp. All rights reserved.
+            </p>
+            <div className="flex space-x-4 text-sm text-gray-600">
+              <a href="#" className="hover:text-primary transition-colors">Essentials Terms of Use</a>
+              <span>|</span>
+              <a href="#" className="hover:text-primary transition-colors">EHR Terms of Use</a>
+              <span>|</span>
+              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+            </div>
           </div>
         </div>
       </div>

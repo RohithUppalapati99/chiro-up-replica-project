@@ -2,21 +2,21 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-chiro-green-light to-background">
+    <section className="relative py-20 bg-chiro-green-light">
       <div className="container text-center space-y-8">
         <div className="space-y-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            More Than Software. A Movement{" "}
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight">
+            More Than Software. A Movement<br />
             <span className="text-primary">For Chiropractic Care.</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mt-6">
             Empowering chiropractors to deliver outcomes that transform lives—AND elevate our profession.
           </p>
         </div>
         
-        <div className="flex justify-center">
-          <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
-            See Products
+        <div className="flex justify-center mt-8">
+          <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 font-bold rounded">
+            SEE PRODUCTS
           </Button>
         </div>
 
@@ -27,6 +27,13 @@ const HeroSection = () => {
             className="w-full h-auto rounded-lg shadow-card"
           />
         </div>
+      </div>
+      
+      {/* Curved bottom divider */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12 fill-current text-chiro-green-light">
+          <path d="M0,0 C300,120 900,120 1200,0 L1200,120 L0,120 Z"></path>
+        </svg>
       </div>
     </section>
   );

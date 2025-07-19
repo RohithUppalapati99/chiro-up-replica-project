@@ -6,7 +6,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background border-b backdrop-blur supports-[backdrop-filter]:bg-background/95">
+    <header className="sticky top-0 z-50 w-full bg-white border-b backdrop-blur supports-[backdrop-filter]:bg-white/95">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -35,7 +35,7 @@ const Header = () => {
         {/* Desktop CTA Button */}
         <div className="hidden md:block">
           <Button className="bg-primary hover:bg-primary/90">
-            See Products
+            SEE PRODUCTS
           </Button>
         </div>
 
@@ -67,7 +67,7 @@ const Header = () => {
               <a href="#">Pricing</a>
               <a href="#">Log In</a>
               <Button className="bg-primary hover:bg-primary/90 w-full">
-                See Products
+                SEE PRODUCTS
               </Button>
             </nav>
           </div>

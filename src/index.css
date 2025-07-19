@@ -41,7 +41,7 @@ All colors MUST be HSL.
     /* ChiroUp Brand Colors */
     --chiro-green: 113 39% 58%;
     --chiro-green-dark: 140 30% 25%;
-    --chiro-green-light: 113 35% 85%;
+    --chiro-green-light: 113 50% 92%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--chiro-green-light)), hsl(var(--background)));
