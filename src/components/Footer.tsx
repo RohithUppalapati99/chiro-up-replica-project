@@ -55,7 +55,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-chiro-green-dark text-white">
+    <footer className="bg-white text-foreground">
       <div className="container py-16">
         <div className="grid md:grid-cols-5 gap-8">
           {Object.entries(footerLinks).map(([key, section]) => (
