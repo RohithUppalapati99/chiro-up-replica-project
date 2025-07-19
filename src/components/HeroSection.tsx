@@ -22,7 +22,7 @@ const HeroSection = () => {
 
         <div className="mt-16 max-w-5xl mx-auto">
           <img 
-            src="/lovable-uploads/da5e6759-734e-455a-aa3f-d2fa99ba076f.png" 
+            src="/lovable-uploads/b2036cdc-45af-44b6-bc6a-fdb1215bf335.png" 
             alt="ChiroUp Software Interface" 
             className="w-full h-auto rounded-lg shadow-card"
           />
