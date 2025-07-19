@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const PartnerLogos = () => {
   const logos = [
@@ -31,40 +25,40 @@ const PartnerLogos = () => {
           </h2>
           
           <div className="relative overflow-hidden">
-            <Carousel
-              className="w-full"
-              opts={{
-                align: "start",
-                loop: true,
-                slidesToScroll: 1,
-                dragFree: true,
-              }}
-              plugins={[
-                Autoplay({
-                  delay: 2000,
-                  stopOnInteraction: false,
-                  stopOnMouseEnter: false,
-                }),
-              ]}
-            >
-              <CarouselContent className="flex gap-6 ml-0">
-                {[...logos, ...logos].map((logo, index) => (
-                  <CarouselItem 
-                    key={`${logo.name}-${index}`} 
-                    className="pl-0 basis-1/2 md:basis-1/3 lg:basis-1/5"
-                  >
-                    <div className="bg-white rounded-xl shadow-md p-4 h-24 flex items-center justify-center hover:shadow-lg transition-shadow duration-300">
-                      <img
-                        src={logo.src}
-                        alt={logo.name}
-                        className="max-h-full max-w-full object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
+            <div className="flex animate-scroll">
+              {/* First set of logos */}
+              {logos.map((logo, index) => (
+                <div 
+                  key={`first-${index}`}
+                  className="flex-shrink-0 mx-6"
+                >
+                  <div className="bg-white rounded-xl shadow-md p-4 h-24 w-48 flex items-center justify-center hover:shadow-lg transition-shadow duration-300">
+                    <img
+                      src={logo.src}
+                      alt={logo.name}
+                      className="max-h-full max-w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {logos.map((logo, index) => (
+                <div 
+                  key={`second-${index}`}
+                  className="flex-shrink-0 mx-6"
+                >
+                  <div className="bg-white rounded-xl shadow-md p-4 h-24 w-48 flex items-center justify-center hover:shadow-lg transition-shadow duration-300">
+                    <img
+                      src={logo.src}
+                      alt={logo.name}
+                      className="max-h-full max-w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
