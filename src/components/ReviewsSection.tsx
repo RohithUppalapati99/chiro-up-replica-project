@@ -4,7 +4,7 @@ const reviews = [
   {
     name: "Matthew Barnhart",
     rating: 5,
-    text: "Such a great company! They have so many great tools and they make the treating... Read more",
+    text: "Such a great program! They have so many great tools and they make the training... Read more",
     avatar: "/lovable-uploads/3ea4b606-1a23-4e6d-aaad-cac14d9ec33f.png"
   },
   {
@@ -16,7 +16,7 @@ const reviews = [
   {
     name: "Zachary Jameson",
     rating: 5,
-    text: "Great resource for evidence based chiropractic! Read more",
+    text: "Great resource for evidence-based chiropractic! Read more",
     avatar: "/lovable-uploads/3ea4b606-1a23-4e6d-aaad-cac14d9ec33f.png"
   },
   {

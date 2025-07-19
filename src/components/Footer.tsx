@@ -5,57 +5,57 @@ const Footer = () => {
     essentials: {
       title: "Essentials",
       links: [
-        "Clinical Sites",
-        "Marketing Tools", 
-        "SOAP Templates",
-        "Patient Education",
-        "Condition Library"
+        { text: "Clinical Sites", href: "/clinical-sites" },
+        { text: "Patient Education", href: "/patient-education" },
+        { text: "Marketing Tools", href: "/marketing-tools" },
+        { text: "SOAP Templates", href: "/soap-templates" },
+        { text: "Condition Library", href: "/condition-library" }
       ]
     },
     ehr: {
       title: "EHR",
       links: [
-        "SOAP Notes",
-        "Scheduling",
-        "Billing",
-        "Patient Portal",
-        "Reports"
+        { text: "SOAP Notes", href: "/soap-notes" },
+        { text: "Scheduling", href: "/scheduling" },
+        { text: "Billing", href: "/billing" },
+        { text: "Reporting", href: "/reporting" },
+        { text: "Support & Training", href: "/support-training" }
       ]
     },
     resources: {
       title: "Resources",
       links: [
-        "Blog",
-        "Webinars",
-        "Podcast",
-        "Research",
-        "Case Studies"
+        { text: "Blog", href: "/blog" },
+        { text: "Webinars", href: "/webinars" },
+        { text: "Podcast", href: "/podcast" },
+        { text: "Events", href: "/events" },
+        { text: "Toolkits", href: "/toolkits" }
       ]
     },
     getStarted: {
       title: "Get Started",
       links: [
-        "Try for Free",
-        "Pricing",
-        "Book a Demo",
-        "Migration",
-        "Training"
+        { text: "Try for Free", href: "/try-for-free" },
+        { text: "EHR Demo", href: "/ehr-demo" },
+        { text: "Pricing", href: "/pricing" },
+        { text: "Students", href: "/students" },
+        { text: "Recent Grads", href: "/recent-grads" }
       ]
     },
     support: {
       title: "Support",
       links: [
-        "Contact Us",
-        "FAQs",
-        "Let's Chat",
-        "Help Center",
-        "System Status"
+        { text: "FAQs", href: "/faqs" },
+        { text: "Contact Us", href: "/contact" },
+        { text: "Let's Chat", href: "#" },
+        { text: "Help Center", href: "/help-center" },
+        { text: "System Status", href: "/system-status" }
       ]
     }
   };
 
   return (
-    <footer className="bg-white border-t">
+    <footer className="bg-chiro-green-dark text-white">
       <div className="container py-16">
         <div className="grid md:grid-cols-5 gap-8">
           {Object.entries(footerLinks).map(([key, section]) => (
@@ -65,10 +65,10 @@ const Footer = () => {
                 {section.links.map((link, index) => (
                   <li key={index}>
                     <a 
-                      href="#" 
-                      className="text-gray-600 hover:text-primary transition-colors text-sm"
+                      href={link.href} 
+                      className="text-white hover:text-chiro-green-light transition-colors text-sm"
                     >
-                      {link}
+                      {link.text}
                     </a>
                   </li>
                 ))}
@@ -77,38 +77,38 @@ const Footer = () => {
           ))}
         </div>
         
-        <div className="border-t mt-12 pt-8 space-y-4">
+        <div className="border-t border-white/20 mt-12 pt-8 space-y-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
             <div className="space-y-2">
-              <p className="text-sm text-gray-600">
-                4460 N Illinois St, Suite B<br />
+              <p className="text-sm text-white">
+                4460 N Illinois St. Suite 8<br />
                 Swansea, IL 62226
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                  <Linkedin className="h-5 w-5" />
+                <a href="https://facebook.com/ChiroUp" target="_blank" className="text-white hover:text-chiro-green-light transition-colors">
+                  <Facebook className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                  <Facebook className="h-5 w-5" />
+                <a href="https://instagram.com/ChiroUp" target="_blank" className="text-white hover:text-chiro-green-light transition-colors">
+                  <Instagram className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                  <Instagram className="h-5 w-5" />
+                <a href="https://linkedin.com/company/ChiroUp" target="_blank" className="text-white hover:text-chiro-green-light transition-colors">
+                  <Linkedin className="h-6 w-6" />
                 </a>
               </div>
             </div>
           </div>
           
-          <div className="border-t pt-4 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
-            <p className="text-sm text-gray-600">
-              © 2025 ChiroUp. All rights reserved.
-            </p>
-            <div className="flex space-x-4 text-sm text-gray-600">
-              <a href="#" className="hover:text-primary transition-colors">Essentials Terms of Use</a>
-              <span>|</span>
-              <a href="#" className="hover:text-primary transition-colors">EHR Terms of Use</a>
-              <span>|</span>
-              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+          <div className="border-t border-white/20 pt-4 text-center space-y-2">
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 text-sm text-white">
+              <a href="https://help.chiroup.com/terms-essentials" className="hover:text-chiro-green-light transition-colors">Essentials Terms of Use</a>
+              <span className="hidden md:inline">|</span>
+              <a href="https://help.chiroup.com/terms-ehr" className="hover:text-chiro-green-light transition-colors">EHR Terms of Use</a>
+              <span className="hidden md:inline">|</span>
+              <a href="https://help.chiroup.com/privacy-policy" className="hover:text-chiro-green-light transition-colors">Privacy Policy</a>
             </div>
+            <p className="text-sm text-white">
+              © 2025 ChiroUp. All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>

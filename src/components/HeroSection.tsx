@@ -20,12 +20,19 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        <div className="mt-16 max-w-5xl mx-auto">
-          <img 
-            src="/lovable-uploads/b2036cdc-45af-44b6-bc6a-fdb1215bf335.png" 
-            alt="ChiroUp Software Interface" 
-            className="w-full h-auto rounded-lg shadow-card"
-          />
+        <div className="mt-16 max-w-5xl mx-auto relative">
+          <div className="relative inline-block w-full max-w-2xl">
+            <img 
+              src="/lovable-uploads/b2036cdc-45af-44b6-bc6a-fdb1215bf335.png" 
+              alt="Screenshot of ChiroUp app (EHR interface)" 
+              className="w-full h-auto rounded-lg shadow-card relative z-10"
+            />
+            <img 
+              src="/lovable-uploads/5b64f605-b947-43f2-bee9-4aea15f4df06.png" 
+              alt="Guided for Success - About Your Condition document" 
+              className="absolute top-8 -right-8 md:-right-16 w-1/2 max-w-xs rounded shadow-lg z-20"
+            />
+          </div>
         </div>
       </div>
       

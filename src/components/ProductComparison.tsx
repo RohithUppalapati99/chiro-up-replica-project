@@ -19,7 +19,7 @@ const ProductComparison = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-center">ChiroUp Essentials</h3>
               <p className="text-gray-600 text-center">
-                Essential tools for evidence-based chiropractic care with patient education and SOAP templates.
+                Evidence-based protocols, smarter diagnostics, and instant patient education—delivered without slowing you down.
               </p>
             </div>
             
@@ -44,7 +44,7 @@ const ProductComparison = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-center">ChiroUp EHR</h3>
               <p className="text-gray-600 text-center">
-                Complete electronic health records with scheduling, billing, and comprehensive practice management.
+                A full scale EHR & practice management system. Built by chiropractors to match how we think, treat & run clinics.
               </p>
             </div>
             
@@ -60,7 +60,7 @@ const ProductComparison = () => {
               <Button variant="outline" size="lg" className="w-full border-primary text-primary hover:bg-primary hover:text-white font-bold">
                 BOOK A DEMO
               </Button>
-              <p className="text-sm text-gray-500 italic">Currently available in the US only.</p>
+              <p className="text-sm text-gray-500 italic">Currently available in the U.S. only.</p>
             </div>
           </div>
         </div>

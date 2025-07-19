@@ -4,17 +4,17 @@ const features = [
   {
     iconSrc: "/lovable-uploads/7c1a42b6-3155-48ac-9f89-046fcddc6fbc.png",
     title: "Built to Get You Home Sooner",
-    description: "Streamline your workflow with intuitive tools designed to reduce administrative burden and get you home to what matters most."
+    description: "Spend less time on paperwork and more time with the people who matter most."
   },
   {
     iconSrc: "/lovable-uploads/17e79eba-f8b0-469d-bc22-006343bbd6b0.png",
     title: "Here to Make Your Patients Say \"Wow\"",
-    description: "Deliver exceptional patient experiences with comprehensive care plans and visual education tools that engage and inspire."
+    description: "Deliver exceptional care that leaves patients impressed and excited about their progress."
   },
   {
     iconSrc: "/lovable-uploads/08be4c94-2fd6-44fb-96b8-bbf28e31eef9.png",
     title: "Turning Outcomes Into Income",
-    description: "Track patient progress, demonstrate value, and build a thriving practice with outcome-based care documentation."
+    description: "Achieve better patient results while streamlining your practice for higher productivity and growth."
   }
 ];
 
