@@ -66,7 +66,7 @@ const Footer = () => {
                   <li key={index}>
                     <a 
                       href={link.href} 
-                      className="text-white hover:text-chiro-green-light transition-colors text-sm"
+                      className="text-foreground hover:text-primary transition-colors text-sm"
                     >
                       {link.text}
                     </a>
@@ -77,36 +77,36 @@ const Footer = () => {
           ))}
         </div>
         
-        <div className="border-t border-white/20 mt-12 pt-8 space-y-4">
+        <div className="border-t border-foreground/20 mt-12 pt-8 space-y-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
             <div className="space-y-2">
-              <p className="text-sm text-white">
+              <p className="text-sm text-foreground">
                 4460 N Illinois St. Suite 8<br />
                 Swansea, IL 62226
               </p>
               <div className="flex space-x-4">
-                <a href="https://facebook.com/ChiroUp" target="_blank" className="text-white hover:text-chiro-green-light transition-colors">
+                <a href="https://facebook.com/ChiroUp" target="_blank" className="text-foreground hover:text-primary transition-colors">
                   <Facebook className="h-6 w-6" />
                 </a>
-                <a href="https://instagram.com/ChiroUp" target="_blank" className="text-white hover:text-chiro-green-light transition-colors">
+                <a href="https://instagram.com/ChiroUp" target="_blank" className="text-foreground hover:text-primary transition-colors">
                   <Instagram className="h-6 w-6" />
                 </a>
-                <a href="https://linkedin.com/company/ChiroUp" target="_blank" className="text-white hover:text-chiro-green-light transition-colors">
+                <a href="https://linkedin.com/company/ChiroUp" target="_blank" className="text-foreground hover:text-primary transition-colors">
                   <Linkedin className="h-6 w-6" />
                 </a>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-white/20 pt-4 text-center space-y-2">
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 text-sm text-white">
-              <a href="https://help.chiroup.com/terms-essentials" className="hover:text-chiro-green-light transition-colors">Essentials Terms of Use</a>
+          <div className="border-t border-foreground/20 pt-4 text-center space-y-2">
+            <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 text-sm text-foreground">
+              <a href="https://help.chiroup.com/terms-essentials" className="hover:text-primary transition-colors">Essentials Terms of Use</a>
               <span className="hidden md:inline">|</span>
-              <a href="https://help.chiroup.com/terms-ehr" className="hover:text-chiro-green-light transition-colors">EHR Terms of Use</a>
+              <a href="https://help.chiroup.com/terms-ehr" className="hover:text-primary transition-colors">EHR Terms of Use</a>
               <span className="hidden md:inline">|</span>
-              <a href="https://help.chiroup.com/privacy-policy" className="hover:text-chiro-green-light transition-colors">Privacy Policy</a>
+              <a href="https://help.chiroup.com/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
             </div>
-            <p className="text-sm text-white">
+            <p className="text-sm text-foreground">
               © 2025 ChiroUp. All Rights Reserved.
             </p>
           </div>
