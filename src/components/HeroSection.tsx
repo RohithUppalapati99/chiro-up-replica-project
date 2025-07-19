@@ -2,10 +2,29 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-white via-gray-50/30 to-primary/5 overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.1),transparent_50%)] animate-pulse"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.1),transparent_50%)]"></div>
+    <section className="relative py-20 bg-white overflow-hidden">
+      {/* Animated grid background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:6rem_4rem] opacity-30"></div>
+      
+      {/* Floating animated orbs */}
+      <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-r from-primary/15 to-blue-400/10 rounded-full blur-2xl animate-bounce"></div>
+      <div className="absolute top-32 right-20 w-24 h-24 bg-gradient-to-r from-purple-400/10 to-pink-400/5 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-gradient-to-r from-emerald-400/10 to-teal-400/5 rounded-full blur-3xl animate-bounce" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-1/2 right-10 w-20 h-20 bg-gradient-to-r from-indigo-400/8 to-blue-400/4 rounded-full blur-xl animate-pulse" style={{ animationDelay: '3s' }}></div>
+      
+      {/* Moving geometric shapes */}
+      <div className="absolute top-1/4 right-1/3 w-2 h-2 bg-primary/40 rotate-45 animate-ping"></div>
+      <div className="absolute bottom-1/3 left-1/2 w-3 h-3 bg-blue-400/30 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+      <div className="absolute top-1/2 right-1/4 w-1 h-8 bg-gradient-to-b from-primary/40 to-transparent animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+      <div className="absolute top-1/3 left-1/3 w-4 h-1 bg-emerald-400/30 animate-pulse" style={{ animationDelay: '2.5s' }}></div>
+      
+      {/* Flowing animated lines */}
+      <div className="absolute top-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent transform -rotate-12 animate-pulse"></div>
+      <div className="absolute bottom-40 right-0 w-full h-px bg-gradient-to-l from-transparent via-blue-400/15 to-transparent transform rotate-12 animate-pulse" style={{ animationDelay: '2s' }}></div>
+      
+      {/* Subtle moving gradients */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/3 to-transparent animate-pulse" style={{ animationDelay: '4s' }}></div>
+      <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,rgba(59,130,246,0.05)_60deg,transparent_120deg)] animate-spin" style={{ animationDuration: '20s' }}></div>
       
       <div className="container text-center space-y-8 relative z-10">
         <div className="space-y-6 max-w-4xl mx-auto">
