@@ -45,8 +45,12 @@ const PartnerLogos = () => {
       
       <div className="container relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
-            Partnered with the World's Leading Chiropractic Organizations.
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Partnered with the World's Leading{" "}
+            <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent">
+              Chiropractic Organizations
+            </span>
+            .
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Trusted by industry leaders and recognized organizations worldwide
