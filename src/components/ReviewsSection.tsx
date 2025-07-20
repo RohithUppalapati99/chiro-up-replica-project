@@ -219,7 +219,7 @@ const ReviewsSection = () => {
                 </div>
               ))}
             </div>
-            <span className="text-sm font-medium text-primary">5,000+ Happy Practitioners</span>
+            <span className="text-sm font-medium text-primary">3,000+ Happy Practitioners</span>
           </div>
         </div>
       </div>
