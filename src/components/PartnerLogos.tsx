@@ -53,8 +53,8 @@ const PartnerLogos = () => {
           </p>
         </div>
         
-        {/* First row - sliding left */}
-        <div className="relative mb-8">
+        {/* Sliding logos row */}
+        <div className="relative">
           <div className="flex animate-marquee space-x-12 items-center">
             {[...partnerLogos, ...partnerLogos].map((logo, index) => (
               <div key={`row1-${index}`} className="flex-shrink-0 group">
@@ -74,47 +74,6 @@ const PartnerLogos = () => {
           {/* Gradient overlays for seamless effect */}
           <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-background to-transparent z-10" />
           <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-background to-transparent z-10" />
-        </div>
-
-        {/* Second row - sliding right */}
-        <div className="relative">
-          <div className="flex animate-marquee-reverse space-x-12 items-center">
-            {[...partnerLogos.slice().reverse(), ...partnerLogos.slice().reverse()].map((logo, index) => (
-              <div key={`row2-${index}`} className="flex-shrink-0 group">
-                <div className="flex items-center justify-center w-40 h-24 hover:scale-110 transition-all duration-300">
-                  <img 
-                    src={logo.src} 
-                    alt={logo.alt} 
-                    className="max-h-20 max-w-36 object-contain opacity-80 hover:opacity-100 transition-all duration-300 drop-shadow-lg hover:drop-shadow-xl" 
-                    style={{
-                      filter: 'brightness(1.1) contrast(1.1)',
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* Gradient overlays for seamless effect */}
-          <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-background to-transparent z-10" />
-          <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-background to-transparent z-10" />
-        </div>
-        
-        {/* Trust indicators */}
-        <div className="text-center mt-12 animate-fade-in">
-          <div className="flex justify-center items-center space-x-8 text-sm text-muted-foreground">
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span>Verified Partners</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-              <span>Industry Leaders</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
-              <span>Global Network</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
