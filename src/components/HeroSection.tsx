@@ -2,35 +2,38 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden">
-      {/* Animated wave patterns */}
+    <section className="relative py-20 bg-gradient-to-br from-white via-slate-50/50 to-primary/5 overflow-hidden">
+      {/* Dynamic wave background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,hsl(var(--primary))_0%,transparent_40%)] opacity-5 animate-pulse" style={{ animationDuration: '4s' }}></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,hsl(var(--primary))_0%,transparent_40%)] opacity-8 animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }}></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,hsl(var(--primary))_0%,transparent_40%)] opacity-6 animate-pulse" style={{ animationDuration: '5s', animationDelay: '1s' }}></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,hsl(var(--primary))_0%,transparent_60%)] opacity-10 animate-pulse" style={{ animationDuration: '8s' }}></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_120%_at_80%_-40%,hsl(var(--primary))_0%,transparent_70%)] opacity-15 animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }}></div>
       </div>
       
-      {/* Dynamic dot matrix pattern */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute w-2 h-2 bg-primary rounded-full top-20 left-20 animate-ping" style={{ animationDelay: '0s' }}></div>
-        <div className="absolute w-1 h-1 bg-primary rounded-full top-40 left-60 animate-ping" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute w-3 h-3 bg-primary rounded-full top-60 right-40 animate-ping" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute w-1 h-1 bg-primary rounded-full bottom-40 left-40 animate-ping" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute w-2 h-2 bg-primary rounded-full bottom-60 right-60 animate-ping" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute w-1 h-1 bg-primary rounded-full top-1/3 left-1/3 animate-ping" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute w-2 h-2 bg-primary rounded-full top-2/3 right-1/3 animate-ping" style={{ animationDelay: '2.5s' }}></div>
+      {/* Floating particle system */}
+      <div className="absolute inset-0">
+        {/* Large floating orbs */}
+        <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-full blur-3xl animate-bounce opacity-60" style={{ animationDuration: '6s', animationDelay: '0s' }}></div>
+        <div className="absolute top-40 right-32 w-48 h-48 bg-gradient-to-bl from-blue-400/8 via-purple-400/4 to-transparent rounded-full blur-2xl animate-bounce opacity-50" style={{ animationDuration: '8s', animationDelay: '2s' }}></div>
+        <div className="absolute bottom-32 left-1/3 w-80 h-80 bg-gradient-to-tr from-emerald-400/6 via-teal-400/3 to-transparent rounded-full blur-3xl animate-bounce opacity-40" style={{ animationDuration: '10s', animationDelay: '4s' }}></div>
+        
+        {/* Moving particles */}
+        <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary/30 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
+        <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-primary/40 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-primary/50 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 right-1/4 w-5 h-5 bg-primary/25 rounded-full animate-ping" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-1/4 right-2/3 w-3 h-3 bg-primary/35 rounded-full animate-ping" style={{ animationDelay: '4s' }}></div>
       </div>
       
-      {/* Floating medical/tech elements */}
-      <div className="absolute top-32 left-16 w-8 h-8 border-2 border-primary/30 rounded-lg animate-bounce opacity-60" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute top-48 right-24 w-6 h-6 border-2 border-primary/30 rounded-full animate-bounce opacity-40" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute bottom-32 left-32 w-4 h-4 bg-primary/20 rounded-sm animate-bounce opacity-50" style={{ animationDelay: '3s' }}></div>
-      <div className="absolute bottom-48 right-32 w-10 h-2 bg-gradient-to-r from-primary/20 to-transparent rounded-full animate-pulse opacity-60" style={{ animationDelay: '1.5s' }}></div>
+      {/* Morphing geometric shapes */}
+      <div className="absolute top-32 left-16 w-16 h-16 border-2 border-primary/20 rounded-lg transform rotate-12 animate-spin opacity-60" style={{ animationDuration: '20s' }}></div>
+      <div className="absolute top-48 right-24 w-12 h-12 border-2 border-primary/30 rounded-full animate-bounce opacity-50" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute bottom-40 left-32 w-8 h-20 bg-gradient-to-t from-primary/15 to-transparent rounded-full animate-pulse opacity-40" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute bottom-32 right-40 w-20 h-8 bg-gradient-to-r from-primary/15 to-transparent rounded-full animate-pulse opacity-40" style={{ animationDelay: '3s' }}></div>
       
-      {/* Moving connection lines */}
-      <div className="absolute top-1/4 left-1/4 w-32 h-px bg-gradient-to-r from-primary/30 to-transparent animate-pulse" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute top-3/4 right-1/4 w-24 h-px bg-gradient-to-l from-primary/30 to-transparent animate-pulse" style={{ animationDelay: '4s' }}></div>
-      <div className="absolute top-1/2 left-1/2 w-px h-16 bg-gradient-to-b from-primary/30 to-transparent animate-pulse" style={{ animationDelay: '3s' }}></div>
+      {/* Flowing energy lines */}
+      <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent transform -rotate-12 animate-pulse opacity-60" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-1/2 right-0 w-full h-px bg-gradient-to-l from-transparent via-primary/30 to-transparent transform rotate-6 animate-pulse opacity-50" style={{ animationDelay: '3s' }}></div>
+      <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/35 to-transparent transform rotate-3 animate-pulse opacity-55" style={{ animationDelay: '5s' }}></div>
       
       <div className="container text-center space-y-8 relative z-10">
         <div className="space-y-6 max-w-4xl mx-auto">
