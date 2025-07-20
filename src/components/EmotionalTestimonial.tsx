@@ -6,6 +6,20 @@ import { Quote, Heart, Clock, Star } from "lucide-react";
 const EmotionalTestimonial = () => {
   return (
     <section className="relative py-16 bg-gradient-to-br from-chiro-green-dark via-chiro-green to-primary overflow-hidden">
+      {/* Curved top divider */}
+      <div className="absolute top-0 left-0 right-0">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 fill-current text-background transform rotate-180">
+          <path d="M0,0 C300,120 900,120 1200,0 L1200,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
+      {/* Curved bottom divider */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 fill-current text-background">
+          <path d="M0,0 C300,120 900,120 1200,0 L1200,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
       {/* Minimal Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute top-8 right-12 w-24 h-24 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
@@ -30,7 +44,7 @@ const EmotionalTestimonial = () => {
           {/* Compact Header */}
           <div className="text-center mb-8 animate-fade-in">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-              Built to Get You Home Sooner
+              When We Said Built to Get You Home Sooner… We Meant It.
             </h2>
             <div className="w-24 h-1 bg-white/40 mx-auto rounded-full animate-scale-in animation-delay-300"></div>
           </div>
@@ -41,19 +55,20 @@ const EmotionalTestimonial = () => {
               {/* Floating Quote */}
               <Quote className="absolute -top-3 -left-3 w-6 h-6 text-white/60 animate-bounce animation-delay-1000" />
               
-              {/* Main Quote with Typewriter Effect */}
+              {/* Full Original Quote */}
               <blockquote className="text-lg md:text-xl leading-relaxed text-white/95 mb-6 animate-fade-in animation-delay-700">
-                "Today was our first day using ChiroUp EHR, and I have{" "}
+                "Okay, I am in tears. Today was our first day using ChiroUp EHR, and I have{" "}
                 <span className="relative inline-block">
                   <span className="bg-white/20 px-2 py-1 rounded font-semibold">
                     ALL of my charts done… on day one!
                   </span>
                   <span className="absolute -top-1 -right-1 w-2 h-2 bg-yellow-300 rounded-full animate-ping"></span>
                 </span>
-                {" "}I now have{" "}
+                {" "}I cannot believe it is this intuitive to use. I now have{" "}
                 <span className="text-white font-semibold bg-gradient-to-r from-white/20 to-white/30 px-2 py-1 rounded">
-                  time for family again.
-                </span>"
+                  enough time to go to the gym and pick my son up from school.
+                </span>
+                {" "}I cannot thank you guys enough!"
               </blockquote>
 
               {/* Compact Author Section */}
