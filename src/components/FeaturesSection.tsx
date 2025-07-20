@@ -32,10 +32,6 @@ const FeaturesSection = () => {
       
       <div className="container relative z-10">
         <div className="text-center space-y-6 mb-20">
-          <Badge variant="secondary" className="mb-4 px-4 py-2 text-sm font-medium">
-            <Sparkles className="w-4 h-4 mr-2" />
-            Premium Experience
-          </Badge>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in">
             Other companies sell features.<br />
             <span className="text-primary bg-gradient-to-r from-primary to-chiro-green bg-clip-text text-transparent">

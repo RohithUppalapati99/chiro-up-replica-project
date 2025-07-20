@@ -96,10 +96,6 @@ const Header = () => {
             alt="ChiroUp Logo" 
             className="h-8 w-auto transition-transform hover:scale-105"
           />
-          <Badge variant="secondary" className="hidden sm:flex items-center gap-1 text-xs">
-            <Sparkles className="h-3 w-3" />
-            Premium
-          </Badge>
         </div>
 
         {/* Desktop Navigation */}
