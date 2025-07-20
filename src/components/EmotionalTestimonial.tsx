@@ -13,12 +13,6 @@ const EmotionalTestimonial = () => {
         </svg>
       </div>
 
-      {/* Curved bottom divider */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 fill-current text-background">
-          <path d="M0,0 C300,120 900,120 1200,0 L1200,120 L0,120 Z"></path>
-        </svg>
-      </div>
 
       {/* Minimal Animated Background */}
       <div className="absolute inset-0">
