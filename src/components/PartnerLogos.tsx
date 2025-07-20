@@ -1,6 +1,4 @@
 import React from "react";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 
 const PartnerLogos = () => {
   const partnerLogos = [
@@ -38,9 +36,6 @@ const PartnerLogos = () => {
     }
   ];
 
-  // Duplicate logos for seamless infinite scroll
-  const duplicatedLogos = [...partnerLogos, ...partnerLogos];
-
   return (
     <section className="py-20 bg-gradient-to-br from-background via-muted/30 to-background relative overflow-hidden">
       {/* Background decoration */}
@@ -58,36 +53,50 @@ const PartnerLogos = () => {
           </p>
         </div>
         
+        {/* First row - sliding left */}
+        <div className="relative mb-8">
+          <div className="flex animate-marquee space-x-12 items-center">
+            {[...partnerLogos, ...partnerLogos].map((logo, index) => (
+              <div key={`row1-${index}`} className="flex-shrink-0 group">
+                <div className="flex items-center justify-center w-40 h-24 hover:scale-110 transition-all duration-300">
+                  <img 
+                    src={logo.src} 
+                    alt={logo.alt} 
+                    className="max-h-20 max-w-36 object-contain opacity-80 hover:opacity-100 transition-all duration-300 drop-shadow-lg hover:drop-shadow-xl" 
+                    style={{
+                      filter: 'brightness(1.1) contrast(1.1)',
+                    }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* Gradient overlays for seamless effect */}
+          <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-background to-transparent z-10" />
+          <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-background to-transparent z-10" />
+        </div>
+
+        {/* Second row - sliding right */}
         <div className="relative">
-          <Carousel
-            plugins={[
-              Autoplay({
-                delay: 2000,
-                stopOnInteraction: false,
-                stopOnMouseEnter: false,
-              }),
-            ]}
-            opts={{
-              align: "start",
-              loop: true,
-              slidesToScroll: 1,
-            }}
-            className="w-full"
-          >
-            <CarouselContent className="-ml-4">
-              {duplicatedLogos.map((logo, index) => (
-                <CarouselItem key={`${logo.alt}-${index}`} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <div className="flex items-center justify-center p-6 h-24 bg-white/80 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group">
-                    <img 
-                      src={logo.src} 
-                      alt={logo.alt} 
-                      className="max-h-16 max-w-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0" 
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+          <div className="flex animate-marquee-reverse space-x-12 items-center">
+            {[...partnerLogos.slice().reverse(), ...partnerLogos.slice().reverse()].map((logo, index) => (
+              <div key={`row2-${index}`} className="flex-shrink-0 group">
+                <div className="flex items-center justify-center w-40 h-24 hover:scale-110 transition-all duration-300">
+                  <img 
+                    src={logo.src} 
+                    alt={logo.alt} 
+                    className="max-h-20 max-w-36 object-contain opacity-80 hover:opacity-100 transition-all duration-300 drop-shadow-lg hover:drop-shadow-xl" 
+                    style={{
+                      filter: 'brightness(1.1) contrast(1.1)',
+                    }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* Gradient overlays for seamless effect */}
+          <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-background to-transparent z-10" />
+          <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-background to-transparent z-10" />
         </div>
         
         {/* Trust indicators */}
