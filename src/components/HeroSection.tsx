@@ -3,10 +3,22 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section className="relative py-20 bg-gradient-to-br from-white via-slate-50/50 to-primary/5 overflow-hidden">
-      {/* Subtle gradient background animation */}
+      {/* Modern animated background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 animate-pulse opacity-50" style={{ animationDuration: '8s' }}></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--primary))_0%,transparent_50%)] opacity-5"></div>
+        {/* Gradient orbs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-primary/10 to-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }}></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-primary/8 to-primary/3 rounded-full blur-2xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }}></div>
+        
+        {/* Grid pattern */}
+        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
+        
+        {/* Floating particles */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-20 w-2 h-2 bg-primary/20 rounded-full animate-bounce" style={{ animationDuration: '3s', animationDelay: '0s' }}></div>
+          <div className="absolute top-40 right-32 w-1 h-1 bg-primary/30 rounded-full animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
+          <div className="absolute bottom-32 left-1/3 w-1.5 h-1.5 bg-primary/25 rounded-full animate-bounce" style={{ animationDuration: '5s', animationDelay: '2s' }}></div>
+          <div className="absolute top-1/3 right-20 w-1 h-1 bg-primary/20 rounded-full animate-bounce" style={{ animationDuration: '6s', animationDelay: '3s' }}></div>
+        </div>
       </div>
       
       <div className="container text-center space-y-8 relative z-10">
@@ -15,7 +27,7 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight bg-gradient-to-r from-gray-900 via-gray-800 to-primary bg-clip-text text-transparent">
               More Than Software. A Movement<br />
               <span className="bg-gradient-to-r from-primary via-primary to-primary/80 bg-clip-text text-transparent">
-                <span className="inline-block animate-[typewriter_3s_ease-in-out_1s_both]">For Chiropractic Care.</span>
+                <span className="inline-block overflow-hidden whitespace-nowrap border-r-2 border-primary animate-[typewriter_3s_ease-in-out_1s_both,blink_1s_infinite_2s]">For Chiropractic Care.</span>
               </span>
             </h1>
           </div>

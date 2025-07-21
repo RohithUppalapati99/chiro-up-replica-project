@@ -104,15 +104,18 @@ export default {
 				},
 				'typewriter': {
 					'0%': { 
-						width: '0',
-						opacity: '0'
-					},
-					'1%': {
-						opacity: '1'
+						width: '0'
 					},
 					'100%': { 
-						width: '100%',
-						opacity: '1'
+						width: '100%'
+					}
+				},
+				'blink': {
+					'0%, 50%': { 
+						borderColor: 'hsl(var(--primary))'
+					},
+					'51%, 100%': { 
+						borderColor: 'transparent'
 					}
 				}
 			},
@@ -122,7 +125,8 @@ export default {
 				'scroll': 'scroll 30s linear infinite',
 				'marquee': 'marquee 25s linear infinite',
 				'marquee-reverse': 'marquee-reverse 25s linear infinite',
-				'typewriter': 'typewriter 3s ease-in-out 1s both'
+				'typewriter': 'typewriter 3s ease-in-out 1s both',
+				'blink': 'blink 1s infinite'
 			}
 		}
 	},
