@@ -93,14 +93,14 @@ const ReviewsSection = () => {
           </p>
         </div>
 
-        {/* Scrolling Reviews Container */}
-        <div className="relative">
-          {/* First Row - Moving Right */}
-          <div className="flex space-x-6 mb-8 animate-marquee">
-            {reviews.slice(0, 4).map((review, index) => (
+        {/* Infinite Scrolling Reviews */}
+        <div className="relative overflow-hidden">
+          <div className="flex space-x-6 animate-infinite-scroll">
+            {/* First set of reviews */}
+            {reviews.map((review, index) => (
               <Card 
                 key={index} 
-                className="min-w-[350px] bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
+                className="min-w-[350px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
               >
                 <CardContent className="p-6 space-y-4">
                   {/* Rating and Category */}
@@ -146,14 +146,11 @@ const ReviewsSection = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Second Row - Moving Left */}
-          <div className="flex space-x-6 animate-marquee-reverse">
-            {reviews.slice(4, 8).map((review, index) => (
+            {/* Duplicate set for seamless infinite loop */}
+            {reviews.map((review, index) => (
               <Card 
-                key={index + 4} 
-                className="min-w-[350px] bg-gradient-to-br from-background to-chiro-green/5 border-chiro-green/20 hover:border-chiro-green/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
+                key={`duplicate-${index}`} 
+                className="min-w-[350px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
               >
                 <CardContent className="p-6 space-y-4">
                   {/* Rating and Category */}
@@ -167,23 +164,23 @@ const ReviewsSection = () => {
                         />
                       ))}
                     </div>
-                    <Badge variant="outline" className="text-xs bg-chiro-green/10">
+                    <Badge variant="outline" className="text-xs bg-primary/10">
                       {review.category}
                     </Badge>
                   </div>
                   
                   {/* Quote */}
                   <div className="relative">
-                    <Quote className="absolute -top-2 -left-2 w-6 h-6 text-chiro-green/30" />
+                    <Quote className="absolute -top-2 -left-2 w-6 h-6 text-primary/30" />
                     <p className="text-muted-foreground leading-relaxed pl-4">
                       "{review.text}"
                     </p>
                   </div>
                   
                   {/* Highlight */}
-                  <div className="bg-chiro-green/10 rounded-lg p-3 border-l-4 border-chiro-green">
-                    <p className="text-sm font-semibold text-chiro-green flex items-center">
-                      <Clock className="w-4 h-4 mr-2" />
+                  <div className="bg-primary/10 rounded-lg p-3 border-l-4 border-primary">
+                    <p className="text-sm font-semibold text-primary flex items-center">
+                      <TrendingUp className="w-4 h-4 mr-2" />
                       {review.highlight}
                     </p>
                   </div>
@@ -195,7 +192,7 @@ const ReviewsSection = () => {
                   </div>
 
                   {/* Glow Effect on Hover */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-chiro-green/0 via-chiro-green/5 to-chiro-green/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
                 </CardContent>
               </Card>
             ))}
