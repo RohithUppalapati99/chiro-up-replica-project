@@ -37,7 +37,7 @@ const FinalCTA = () => {
       </div>
 
       {/* Gradient Glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/2 to-transparent animate-pulse"></div>
       
       <div className="container text-center space-y-10 relative z-10">
         {/* Header with Animation */}
@@ -87,10 +87,10 @@ const FinalCTA = () => {
         </div>
 
         {/* Stats Animation */}
-        <div className="flex flex-wrap justify-center gap-8 pt-8 animate-fade-in animation-delay-1000">
+        <div className="flex flex-wrap justify-center gap-6 pt-4 animate-fade-in animation-delay-1000">
           {[
             { number: "3,000+", label: "Happy Practitioners" },
-            { number: "150+", label: "Countries Served" },
+            { number: "16", label: "Countries Served" },
             { number: "99.9%", label: "Uptime" }
           ].map((stat, index) => (
             <div 
@@ -98,10 +98,10 @@ const FinalCTA = () => {
               className="text-center group animate-scale-in"
               style={{ animationDelay: `${1200 + index * 200}ms` }}
             >
-              <div className="text-2xl md:text-3xl font-bold text-secondary group-hover:scale-110 transition-transform duration-300">
+              <div className="text-xl md:text-2xl font-bold text-secondary group-hover:scale-110 transition-transform duration-300">
                 {stat.number}
               </div>
-              <div className="text-sm text-white/80">{stat.label}</div>
+              <div className="text-xs text-white/80">{stat.label}</div>
             </div>
           ))}
         </div>
