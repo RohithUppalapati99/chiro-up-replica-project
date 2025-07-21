@@ -101,22 +101,6 @@ export default {
 				'marquee-reverse': {
 					'0%': { transform: 'translateX(-100%)' },
 					'100%': { transform: 'translateX(0%)' }
-				},
-				'typewriter': {
-					'0%': { 
-						width: '0'
-					},
-					'100%': { 
-						width: '100%'
-					}
-				},
-				'blink': {
-					'0%, 50%': { 
-						borderColor: 'hsl(var(--primary))'
-					},
-					'51%, 100%': { 
-						borderColor: 'transparent'
-					}
 				}
 			},
 			animation: {
@@ -124,9 +108,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'scroll': 'scroll 30s linear infinite',
 				'marquee': 'marquee 25s linear infinite',
-				'marquee-reverse': 'marquee-reverse 25s linear infinite',
-				'typewriter': 'typewriter 3s ease-in-out 1s both',
-				'blink': 'blink 1s infinite'
+				'marquee-reverse': 'marquee-reverse 25s linear infinite'
 			}
 		}
 	},
