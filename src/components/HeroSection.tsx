@@ -3,39 +3,10 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section className="relative py-20 bg-gradient-to-br from-white via-slate-50/50 to-primary/5 overflow-hidden">
-      {/* Professional healing aura background */}
+      {/* Subtle gradient background animation */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,hsl(var(--primary))_0deg,transparent_60deg,hsl(var(--primary))_120deg,transparent_180deg,hsl(var(--primary))_240deg,transparent_300deg,hsl(var(--primary))_360deg)] opacity-5 animate-spin" style={{ animationDuration: '60s' }}></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--primary))_0%,transparent_70%)] opacity-10 animate-pulse" style={{ animationDuration: '4s' }}></div>
-      </div>
-      
-      {/* Floating wellness elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Healing energy circles */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-primary/20 rounded-full animate-ping opacity-40" style={{ animationDuration: '3s', animationDelay: '0s' }}></div>
-        <div className="absolute top-1/3 right-1/4 w-24 h-24 border border-primary/30 rounded-full animate-ping opacity-50" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
-        <div className="absolute bottom-1/3 left-1/3 w-40 h-40 border border-primary/15 rounded-full animate-ping opacity-30" style={{ animationDuration: '5s', animationDelay: '2s' }}></div>
-        
-        {/* Floating wellness icons */}
-        <div className="absolute top-20 right-20 p-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg animate-bounce opacity-70" style={{ animationDuration: '6s', animationDelay: '0s' }}>
-          <div className="w-6 h-6 bg-primary/60 rounded-full"></div>
-        </div>
-        <div className="absolute top-40 left-16 p-4 bg-white/70 backdrop-blur-sm rounded-xl shadow-lg animate-bounce opacity-60" style={{ animationDuration: '7s', animationDelay: '2s' }}>
-          <div className="w-4 h-4 bg-gradient-to-br from-primary to-primary/60 rounded-sm"></div>
-        </div>
-        <div className="absolute bottom-40 right-32 p-3 bg-white/75 backdrop-blur-sm rounded-full shadow-md animate-bounce opacity-65" style={{ animationDuration: '8s', animationDelay: '4s' }}>
-          <div className="w-5 h-5 bg-primary/50 rounded-full"></div>
-        </div>
-        
-        {/* Connecting lines representing healing pathways */}
-        <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 1200 800">
-          <path d="M100,400 Q300,200 500,400 T900,400" stroke="hsl(var(--primary))" strokeWidth="2" fill="none" className="animate-pulse" style={{ animationDuration: '6s' }}>
-            <animate attributeName="stroke-dasharray" values="0,1000;1000,1000;0,1000" dur="8s" repeatCount="indefinite" />
-          </path>
-          <path d="M200,600 Q400,300 600,500 T1000,300" stroke="hsl(var(--primary))" strokeWidth="1.5" fill="none" className="animate-pulse" style={{ animationDuration: '8s', animationDelay: '2s' }}>
-            <animate attributeName="stroke-dasharray" values="0,800;800,800;0,800" dur="10s" repeatCount="indefinite" />
-          </path>
-        </svg>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 animate-pulse opacity-50" style={{ animationDuration: '8s' }}></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--primary))_0%,transparent_50%)] opacity-5"></div>
       </div>
       
       <div className="container text-center space-y-8 relative z-10">
@@ -43,8 +14,8 @@ const HeroSection = () => {
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight bg-gradient-to-r from-gray-900 via-gray-800 to-primary bg-clip-text text-transparent">
               More Than Software. A Movement<br />
-              <span className="bg-gradient-to-r from-primary via-primary to-primary/80 bg-clip-text text-transparent animate-scale-in">
-                For Chiropractic Care.
+              <span className="bg-gradient-to-r from-primary via-primary to-primary/80 bg-clip-text text-transparent">
+                <span className="inline-block animate-[typewriter_3s_ease-in-out_1s_both]">For Chiropractic Care.</span>
               </span>
             </h1>
           </div>
