@@ -36,8 +36,6 @@ const FinalCTA = () => {
         ))}
       </div>
 
-      {/* Gradient Glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/2 to-transparent animate-pulse"></div>
       
       <div className="container text-center space-y-10 relative z-10">
         {/* Header with Animation */}
