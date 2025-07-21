@@ -100,7 +100,7 @@ const ReviewsSection = () => {
             {reviews.map((review, index) => (
               <Card 
                 key={index} 
-                className="min-w-[250px] max-w-[250px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
+                className="min-w-[300px] max-w-[300px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
               >
                 <CardContent className="p-4 space-y-3">
                   {/* Rating and Category */}
@@ -150,7 +150,7 @@ const ReviewsSection = () => {
             {reviews.map((review, index) => (
               <Card 
                 key={`duplicate-${index}`} 
-                className="min-w-[250px] max-w-[250px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
+                className="min-w-[300px] max-w-[300px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
               >
                 <CardContent className="p-4 space-y-3">
                   {/* Rating and Category */}
