@@ -15,7 +15,7 @@ const FinalCTA = () => {
       <div className="absolute inset-0 opacity-20">
         {/* Floating Orbs */}
         <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-40 right-32 w-48 h-48 bg-secondary rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 bg-secondary rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
         <div className="absolute bottom-32 left-1/3 w-24 h-24 bg-white/50 rounded-full blur-2xl animate-bounce animation-delay-2000"></div>
         
         {/* Grid Pattern */}
@@ -50,12 +50,10 @@ const FinalCTA = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-300">
             Practice{" "}
             <span className="relative inline-block group">
-              <span className="bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent animate-pulse">
+              <span className="text-secondary font-extrabold drop-shadow-lg">
                 SMARTER
               </span>
-              <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-secondary to-secondary-light rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary/30 to-secondary-light/30 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute -bottom-2 left-0 right-0 h-1 bg-secondary rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
             </span>
             . Not harder.
           </h2>
