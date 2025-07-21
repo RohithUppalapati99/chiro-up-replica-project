@@ -100,9 +100,9 @@ const ReviewsSection = () => {
             {reviews.map((review, index) => (
               <Card 
                 key={index} 
-                className="min-w-[250px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
+                className="min-w-[200px] max-w-[200px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
               >
-                <CardContent className="p-6 space-y-4">
+                <CardContent className="p-4 space-y-3">
                   {/* Rating and Category */}
                   <div className="flex justify-between items-start">
                     <div className="flex space-x-1">
@@ -121,8 +121,8 @@ const ReviewsSection = () => {
                   
                   {/* Quote */}
                   <div className="relative">
-                    <Quote className="absolute -top-2 -left-2 w-6 h-6 text-primary/30" />
-                    <p className="text-muted-foreground leading-relaxed pl-4">
+                    <Quote className="absolute -top-2 -left-2 w-5 h-5 text-primary/30" />
+                    <p className="text-sm text-muted-foreground leading-relaxed pl-4 line-clamp-4">
                       "{review.text}"
                     </p>
                   </div>
@@ -150,9 +150,9 @@ const ReviewsSection = () => {
             {reviews.map((review, index) => (
               <Card 
                 key={`duplicate-${index}`} 
-                className="min-w-[250px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
+                className="min-w-[200px] max-w-[200px] flex-shrink-0 bg-gradient-to-br from-background to-primary/5 border-primary/20 hover:border-primary/40 transition-all duration-500 hover:scale-105 hover:shadow-xl group"
               >
-                <CardContent className="p-6 space-y-4">
+                <CardContent className="p-4 space-y-3">
                   {/* Rating and Category */}
                   <div className="flex justify-between items-start">
                     <div className="flex space-x-1">
@@ -171,8 +171,8 @@ const ReviewsSection = () => {
                   
                   {/* Quote */}
                   <div className="relative">
-                    <Quote className="absolute -top-2 -left-2 w-6 h-6 text-primary/30" />
-                    <p className="text-muted-foreground leading-relaxed pl-4">
+                    <Quote className="absolute -top-2 -left-2 w-5 h-5 text-primary/30" />
+                    <p className="text-sm text-muted-foreground leading-relaxed pl-4 line-clamp-4">
                       "{review.text}"
                     </p>
                   </div>
