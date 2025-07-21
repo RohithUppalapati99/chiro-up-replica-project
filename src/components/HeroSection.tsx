@@ -36,7 +36,7 @@ const HeroSection = () => {
       <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/35 to-transparent transform rotate-3 animate-pulse opacity-55" style={{ animationDelay: '5s' }}></div>
       
       <div className="container text-center space-y-8 relative z-10">
-        <div className="space-y-6 max-w-4xl mx-auto">
+        <div className="space-y-6 max-w-7xl mx-auto">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight bg-gradient-to-r from-gray-900 via-gray-800 to-primary bg-clip-text text-transparent">
               More Than Software. A Movement<br />
@@ -59,8 +59,8 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        <div className="mt-16 max-w-5xl mx-auto relative animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <div className="relative inline-block w-full max-w-2xl group">
+        <div className="mt-16 w-full mx-auto relative animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="relative inline-block w-full max-w-5xl group">
             {/* Main image with enhanced styling */}
             <div className="relative transform transition-transform duration-500 hover:scale-105">
               <img 
