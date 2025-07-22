@@ -103,7 +103,7 @@ const Header = () => {
           <NavigationMenuList>
             {/* Products Mega Menu */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-base font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md">
+              <NavigationMenuTrigger className="text-base font-medium">
                 Products
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -145,7 +145,7 @@ const Header = () => {
 
             {/* Resources Dropdown */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-base font-medium focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md">
+              <NavigationMenuTrigger className="text-base font-medium">
                 Resources
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -167,13 +167,13 @@ const Header = () => {
 
             {/* Simple Links */}
             <NavigationMenuItem>
-              <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md")} href="/about">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/about">
                 About
               </NavigationMenuLink>
             </NavigationMenuItem>
             
             <NavigationMenuItem>
-              <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md")} href="/pricing">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/pricing">
                 Pricing
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -185,7 +185,7 @@ const Header = () => {
           <Button variant="ghost" className="text-base font-medium" asChild>
             <a href="https://app.chiroup.com">Log in</a>
           </Button>
-          <Button className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-semibold shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+          <Button className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-semibold shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
             <Sparkles className="mr-2 h-4 w-4" />
             SEE PRODUCTS
           </Button>
@@ -294,7 +294,7 @@ const Header = () => {
               <Separator />
 
               {/* CTA Button */}
-              <Button className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-semibold shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+              <Button className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-semibold shadow-lg">
                 <Sparkles className="mr-2 h-4 w-4" />
                 SEE PRODUCTS
               </Button>

@@ -63,16 +63,14 @@ const PartnerLogos = () => {
             {[...partnerLogos, ...partnerLogos].map((logo, index) => (
               <div key={`row1-${index}`} className="flex-shrink-0 group">
                 <div className="flex items-center justify-center w-40 h-24 hover:scale-110 transition-all duration-300">
-                   <img 
-                     src={logo.src} 
-                     alt={`${logo.alt} - Trusted chiropractic organization partner`} 
-                     className="max-h-20 max-w-36 object-contain opacity-80 hover:opacity-100 transition-all duration-300 drop-shadow-lg hover:drop-shadow-xl" 
-                     style={{
-                       filter: 'brightness(1.1) contrast(1.1)',
-                     }}
-                     loading="lazy"
-                     decoding="async"
-                   />
+                  <img 
+                    src={logo.src} 
+                    alt={logo.alt} 
+                    className="max-h-20 max-w-36 object-contain opacity-80 hover:opacity-100 transition-all duration-300 drop-shadow-lg hover:drop-shadow-xl" 
+                    style={{
+                      filter: 'brightness(1.1) contrast(1.1)',
+                    }}
+                  />
                 </div>
               </div>
             ))}

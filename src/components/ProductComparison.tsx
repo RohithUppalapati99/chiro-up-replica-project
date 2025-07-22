@@ -87,13 +87,11 @@ const ProductComparison = () => {
             <CardContent className="relative z-10 space-y-8">
               {/* Enhanced Image Container */}
               <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/10 to-primary/20 p-2 group-hover:scale-105 transition-transform duration-500">
-                 <img 
-                   src="/lovable-uploads/5b64f605-b947-43f2-bee9-4aea15f4df06.png" 
-                   alt="ChiroUp Essentials interface showing evidence-based protocols and patient education tools"
-                   className="w-full h-64 object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300"
-                   loading="lazy"
-                   decoding="async"
-                 />
+                <img 
+                  src="/lovable-uploads/5b64f605-b947-43f2-bee9-4aea15f4df06.png" 
+                  alt="ChiroUp Essentials Interface"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+                />
                 {/* Overlay Badge */}
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-semibold text-primary">
                   Live Demo
@@ -121,13 +119,9 @@ const ProductComparison = () => {
               
               {/* CTA Section */}
               <div className="text-center space-y-4">
-                <div className="mb-4 p-4 bg-primary/10 rounded-lg border border-primary/20">
-                  <p className="text-2xl font-bold text-primary mb-1">Starting at $49/month</p>
-                  <p className="text-sm text-muted-foreground">Free 14-day trial • No setup fees</p>
-                </div>
                 <Button 
                   size="lg" 
-                  className="w-full bg-gradient-to-r from-primary to-chiro-green hover:from-primary/90 hover:to-chiro-green/90 text-primary-foreground font-bold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105 group focus:outline-none focus:ring-4 focus:ring-primary/50"
+                  className="w-full bg-gradient-to-r from-primary to-chiro-green hover:from-primary/90 hover:to-chiro-green/90 text-primary-foreground font-bold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105 group"
                 >
                   <Sparkles className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform" />
                   TRY FOR FREE
@@ -164,13 +158,11 @@ const ProductComparison = () => {
             <CardContent className="relative z-10 space-y-8">
               {/* Enhanced Image Container */}
               <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-chiro-green/10 to-chiro-green/20 p-2 group-hover:scale-105 transition-transform duration-500">
-                 <img 
-                   src="/lovable-uploads/2caa6733-5951-4a13-8d42-669d7cd0b570.png" 
-                   alt="ChiroUp EHR interface displaying comprehensive practice management and electronic health records system"
-                   className="w-full h-64 object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300"
-                   loading="lazy"
-                   decoding="async"
-                 />
+                <img 
+                  src="/lovable-uploads/2caa6733-5951-4a13-8d42-669d7cd0b570.png" 
+                  alt="ChiroUp EHR Interface"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+                />
                 {/* Overlay Badge */}
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-semibold text-chiro-green">
                   Full EHR
@@ -198,14 +190,10 @@ const ProductComparison = () => {
               
               {/* CTA Section */}
               <div className="text-center space-y-4">
-                <div className="mb-4 p-4 bg-chiro-green/10 rounded-lg border border-chiro-green/20">
-                  <p className="text-2xl font-bold text-chiro-green mb-1">Custom Pricing</p>
-                  <p className="text-sm text-muted-foreground">Full EHR + Practice Management</p>
-                </div>
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="w-full border-2 border-chiro-green text-chiro-green hover:bg-chiro-green hover:text-white font-bold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105 group focus:outline-none focus:ring-4 focus:ring-chiro-green/50"
+                  className="w-full border-2 border-chiro-green text-chiro-green hover:bg-chiro-green hover:text-white font-bold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105 group"
                 >
                   <Users className="mr-3 h-5 w-5 group-hover:scale-110 transition-transform" />
                   BOOK A DEMO

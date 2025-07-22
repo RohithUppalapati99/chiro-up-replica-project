@@ -68,11 +68,11 @@ const EmotionalTestimonial = () => {
               {/* Compact Author Section */}
               <div className="flex items-center justify-between pt-4 border-t border-white/20">
                 <div className="flex items-center space-x-3">
-                   <Avatar className="w-12 h-12 ring-2 ring-white/30 group-hover:ring-white/50 transition-all duration-300">
-                     <AvatarImage 
-                       src="/lovable-uploads/3ea4b606-1a23-4e6d-aaad-cac14d9ec33f.png" 
-                       alt="Portrait of Dr. Lacey Jackson, satisfied ChiroUp EHR user since 2025" 
-                     />
+                  <Avatar className="w-12 h-12 ring-2 ring-white/30 group-hover:ring-white/50 transition-all duration-300">
+                    <AvatarImage 
+                      src="/lovable-uploads/3ea4b606-1a23-4e6d-aaad-cac14d9ec33f.png" 
+                      alt="Dr. Lacey Jackson" 
+                    />
                     <AvatarFallback className="bg-white/20 text-white font-bold">
                       LJ
                     </AvatarFallback>

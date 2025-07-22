@@ -105,14 +105,6 @@ export default {
 				'marquee-reverse': {
 					'0%': { transform: 'translateX(-100%)' },
 					'100%': { transform: 'translateX(0%)' }
-				},
-				'fadeIn': {
-					'0%': { opacity: '0', transform: 'translateY(20px)' },
-					'100%': { opacity: '1', transform: 'translateY(0)' }
-				},
-				'scaleIn': {
-					'0%': { opacity: '0', transform: 'scale(0.95)' },
-					'100%': { opacity: '1', transform: 'scale(1)' }
 				}
 			},
 			animation: {
@@ -121,10 +113,7 @@ export default {
 				'scroll': 'scroll 30s linear infinite',
 				'infinite-scroll': 'infinite-scroll 40s linear infinite',
 				'marquee': 'marquee 25s linear infinite',
-				'marquee-reverse': 'marquee-reverse 25s linear infinite',
-				'fade-in': 'fadeIn 0.6s ease-out',
-				'scale-in': 'scaleIn 0.4s ease-out',
-				'animation-paused': 'paused'
+				'marquee-reverse': 'marquee-reverse 25s linear infinite'
 			}
 		}
 	},

@@ -9,15 +9,19 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_120%_at_80%_-40%,hsl(var(--primary))_0%,transparent_70%)] opacity-15 animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }}></div>
       </div>
       
-      {/* Optimized floating particle system */}
+      {/* Floating particle system */}
       <div className="absolute inset-0">
-        {/* Reduced floating orbs for better performance */}
-        <div className="absolute top-20 left-20 w-48 h-48 bg-gradient-to-br from-primary/8 via-primary/4 to-transparent rounded-full blur-3xl animate-pulse opacity-40" style={{ animationDuration: '8s' }}></div>
-        <div className="absolute bottom-32 left-1/3 w-64 h-64 bg-gradient-to-tr from-primary/6 via-primary/3 to-transparent rounded-full blur-3xl animate-pulse opacity-30" style={{ animationDuration: '10s', animationDelay: '2s' }}></div>
+        {/* Large floating orbs */}
+        <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-full blur-3xl animate-bounce opacity-60" style={{ animationDuration: '6s', animationDelay: '0s' }}></div>
+        <div className="absolute top-40 right-32 w-48 h-48 bg-gradient-to-bl from-blue-400/8 via-purple-400/4 to-transparent rounded-full blur-2xl animate-bounce opacity-50" style={{ animationDuration: '8s', animationDelay: '2s' }}></div>
+        <div className="absolute bottom-32 left-1/3 w-80 h-80 bg-gradient-to-tr from-emerald-400/6 via-teal-400/3 to-transparent rounded-full blur-3xl animate-bounce opacity-40" style={{ animationDuration: '10s', animationDelay: '4s' }}></div>
         
-        {/* Reduced moving particles */}
-        <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '0s', animationDuration: '3s' }}></div>
-        <div className="absolute bottom-1/3 right-1/3 w-2 h-2 bg-primary/25 rounded-full animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '4s' }}></div>
+        {/* Moving particles */}
+        <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary/30 rounded-full animate-ping" style={{ animationDelay: '0s' }}></div>
+        <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-primary/40 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-primary/50 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 right-1/4 w-5 h-5 bg-primary/25 rounded-full animate-ping" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-1/4 right-2/3 w-3 h-3 bg-primary/35 rounded-full animate-ping" style={{ animationDelay: '4s' }}></div>
       </div>
       
       {/* Morphing geometric shapes */}
@@ -49,13 +53,9 @@ const HeroSection = () => {
         </div>
         
         <div className="flex justify-center mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <Button 
-            size="lg" 
-            className="text-xl px-12 py-8 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary shadow-2xl hover:shadow-primary/25 transform hover:scale-105 transition-all duration-300 font-black rounded-2xl border-0 relative group overflow-hidden ring-4 ring-primary/20 hover:ring-primary/30 focus:outline-none focus:ring-4 focus:ring-primary/50"
-            aria-label="View our chiropractic software products"
-          >
-            <span className="relative z-10 tracking-wide">SEE PRODUCTS</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 font-bold rounded-xl border-0 relative group overflow-hidden">
+            <span className="relative z-10">SEE PRODUCTS</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </Button>
         </div>
 
@@ -65,10 +65,8 @@ const HeroSection = () => {
             <div className="relative transform transition-transform duration-500 hover:scale-105">
               <img 
                 src="/lovable-uploads/b2036cdc-45af-44b6-bc6a-fdb1215bf335.png" 
-                alt="ChiroUp EHR interface showing patient management dashboard with clinical protocols and treatment plans" 
-                className="w-full h-auto rounded-2xl shadow-2xl relative z-10 border border-primary/20"
-                loading="eager"
-                decoding="async"
+                alt="Screenshot of ChiroUp app (EHR interface)" 
+                className="w-full h-auto rounded-2xl shadow-2xl relative z-10 border border-gray-200/50"
               />
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
             </div>
@@ -77,10 +75,8 @@ const HeroSection = () => {
             <div className="absolute top-8 -right-8 md:-right-16 w-1/2 max-w-xs transform transition-transform duration-500 hover:scale-110 hover:rotate-1">
               <img 
                 src="/lovable-uploads/5b64f605-b947-43f2-bee9-4aea15f4df06.png" 
-                alt="ChiroUp patient education document showing evidence-based treatment information for improved patient outcomes" 
-                className="w-full rounded-xl shadow-2xl z-20 border border-primary/20"
-                loading="lazy"
-                decoding="async"
+                alt="Guided for Success - About Your Condition document" 
+                className="w-full rounded-xl shadow-2xl z-20 border border-gray-200/50"
               />
               <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-primary/10 rounded-xl blur-lg opacity-60 -z-10"></div>
             </div>
