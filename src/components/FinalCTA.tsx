@@ -3,103 +3,94 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 const FinalCTA = () => {
   return (
-    <section className="relative py-24 bg-gradient-to-br from-primary via-primary to-primary-dark overflow-hidden">
-      {/* Curved top divider */}
-      <div className="absolute top-0 left-0 right-0">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12 fill-current text-background transform rotate-180">
-          <path d="M0,0 C300,120 900,120 1200,0 L1200,120 L0,120 Z"></path>
-        </svg>
-      </div>
-      
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 opacity-20">
-        {/* Floating Orbs */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-40 right-32 w-24 h-24 bg-secondary rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
-        <div className="absolute bottom-32 left-1/3 w-24 h-24 bg-white/50 rounded-full blur-2xl animate-bounce animation-delay-2000"></div>
+    <section className="relative py-16 bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
+      {/* Enhanced Background Elements */}
+      <div className="absolute inset-0 opacity-15">
+        {/* Geometric Shapes */}
+        <div className="absolute top-12 left-12 w-24 h-24 bg-secondary/30 rounded-full blur-2xl animate-ping animation-delay-1000"></div>
+        <div className="absolute top-20 right-20 w-16 h-16 bg-white/20 rounded-full blur-xl animate-ping animation-delay-2000"></div>
         
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse"></div>
+        {/* Subtle Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px] animate-pulse"></div>
         
-        {/* Floating Particles */}
-        {Array.from({ length: 8 }).map((_, i) => (
+        {/* Reduced Floating Particles */}
+        {Array.from({ length: 4 }).map((_, i) => (
           <div
             key={i}
-            className="absolute w-2 h-2 bg-white rounded-full animate-bounce"
+            className="absolute w-1.5 h-1.5 bg-secondary/60 rounded-full animate-ping"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${i * 0.5}s`,
-              animationDuration: `${2 + Math.random() * 2}s`
+              left: `${20 + Math.random() * 60}%`,
+              top: `${20 + Math.random() * 60}%`,
+              animationDelay: `${i * 1}s`,
+              animationDuration: `${3 + Math.random() * 2}s`
             }}
           />
         ))}
       </div>
 
-      
-      <div className="container text-center space-y-10 relative z-10">
-        {/* Header with Animation */}
-        <div className="space-y-6 text-white animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20 animate-scale-in">
-            <Sparkles className="w-4 h-4 text-secondary animate-pulse" />
-            <span className="text-sm font-medium">Transform Your Practice Today</span>
+      <div className="container text-center space-y-8 relative z-10 max-w-4xl">
+        {/* Compact Header */}
+        <div className="space-y-4 text-white">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-1 border border-white/20 transform hover:scale-105 transition-transform duration-300">
+            <Sparkles className="w-3 h-3 text-secondary animate-pulse" />
+            <span className="text-xs font-medium">Transform Your Practice</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-300">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Practice{" "}
             <span className="relative inline-block group">
-              <span className="text-secondary font-extrabold drop-shadow-lg">
+              <span className="text-secondary font-extrabold drop-shadow-lg bg-gradient-to-r from-secondary to-secondary-dark bg-clip-text text-transparent animate-pulse">
                 SMARTER
               </span>
-              <div className="absolute -bottom-2 left-0 right-0 h-1 bg-secondary rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+              <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-secondary rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
             </span>
-            . Not harder.
+            <br className="md:hidden" />
+            <span className="block md:inline">Not harder.</span>
           </h2>
           
-          <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-500">
-            Join thousands of chiropractors who've transformed their practice with evidence-based tools
+          <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto leading-relaxed">
+            Join thousands of chiropractors using evidence-based tools
           </p>
         </div>
         
-        {/* CTA Buttons with Enhanced Animation */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in animation-delay-700">
+        {/* Streamlined CTAs */}
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
           <Button 
             size="lg" 
-            className="group relative text-lg px-10 py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold rounded-full shadow-2xl hover:shadow-secondary/25 hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden"
+            className="group relative text-base px-8 py-4 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold rounded-full shadow-xl hover:shadow-secondary/30 transition-all duration-300 hover:scale-105 overflow-hidden"
           >
-            {/* Shimmer effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            {/* Enhanced Shimmer */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             <span className="relative flex items-center gap-2">
-              SEE PRODUCTS
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              Get Started
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </span>
           </Button>
           
           <Button 
             variant="outline" 
             size="lg"
-            className="text-lg px-10 py-6 bg-white/10 border-white/30 text-white hover:bg-white/20 hover:border-white/50 backdrop-blur-sm rounded-full transition-all duration-300 hover:scale-105"
+            className="text-base px-8 py-4 bg-white/5 border-white/20 text-white hover:bg-white/10 hover:border-white/40 backdrop-blur-sm rounded-full transition-all duration-300 hover:scale-105"
           >
             Watch Demo
           </Button>
         </div>
 
-        {/* Stats Animation */}
-        <div className="flex flex-wrap justify-center gap-6 pt-4 animate-fade-in animation-delay-1000">
+        {/* Compact Stats */}
+        <div className="flex justify-center gap-8 pt-2">
           {[
-            { number: "3,000+", label: "Happy Practitioners" },
-            { number: "16", label: "Countries Served" },
+            { number: "3K+", label: "Practitioners" },
+            { number: "16", label: "Countries" },
             { number: "99.9%", label: "Uptime" }
           ].map((stat, index) => (
             <div 
               key={index} 
-              className="text-center group animate-scale-in"
-              style={{ animationDelay: `${1200 + index * 200}ms` }}
+              className="text-center group hover:scale-110 transition-transform duration-300"
             >
-              <div className="text-xl md:text-2xl font-bold text-secondary group-hover:scale-110 transition-transform duration-300">
+              <div className="text-lg md:text-xl font-bold text-secondary">
                 {stat.number}
               </div>
-              <div className="text-xs text-white/80">{stat.label}</div>
+              <div className="text-xs text-white/70">{stat.label}</div>
             </div>
           ))}
         </div>
