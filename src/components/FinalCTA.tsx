@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 const FinalCTA = () => {
   return (
-    <section className="relative py-16 bg-gradient-to-br from-chiro-green-dark to-slate-900 overflow-hidden">
+    <section className="relative py-16 bg-chiro-green-dark overflow-hidden">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 opacity-10">
         {/* Geometric Shapes */}
