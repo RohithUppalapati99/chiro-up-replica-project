@@ -52,13 +52,15 @@ const FeaturesSection = () => {
             >
               <CardContent className="p-8 text-center space-y-6">
                 {/* Enhanced Image Container */}
-                <div className="relative mb-6">
-                  <div className="w-32 h-32 mx-auto relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 to-chiro-green/20 p-4 group-hover:scale-110 transition-transform duration-500">
-                    <img 
-                      src={feature.iconSrc} 
-                      alt={feature.title}
-                      className="w-full h-full object-contain filter group-hover:brightness-110 transition-all duration-300"
-                    />
+                 <div className="relative mb-6">
+                   <div className="w-32 h-32 mx-auto relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 to-chiro-green/20 p-4 group-hover:scale-110 transition-transform duration-500">
+                     <img 
+                       src={feature.iconSrc} 
+                       alt={`${feature.title} - ChiroUp feature illustration`}
+                       className="w-full h-full object-contain filter group-hover:brightness-110 transition-all duration-300"
+                       loading="lazy"
+                       decoding="async"
+                     />
                     {/* Glow Effect */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
                   </div>

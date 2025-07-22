@@ -93,9 +93,9 @@ const ReviewsSection = () => {
           </p>
         </div>
 
-        {/* Infinite Scrolling Reviews */}
-        <div className="relative overflow-hidden">
-          <div className="flex space-x-6 animate-infinite-scroll">
+        {/* Reviews Grid with Pause on Hover */}
+        <div className="relative overflow-hidden group">
+          <div className="flex space-x-6 animate-infinite-scroll group-hover:animation-paused">
             {/* First set of reviews */}
             {reviews.map((review, index) => (
               <Card 
